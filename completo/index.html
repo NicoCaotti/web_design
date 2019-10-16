@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript/js.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="loadData();">
+
+  <nav role="navigation">
+    <div id="menuToggle">
+     
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="#"><li>Submit a word</li></a>
+      </ul>
+    </div>
+  </nav>
+    
+<div class="flexbox"><form target="hiddenFrame">
+    <div class="searchBox">
+  <div class="search">
+    <h1>Should I say this on a Youtube video?</h1>
+    <h3>(if it shows up you shouldn't)</h3>
+    <div>
+      <input type="text" placeholder="       Search . . ." id="searchText">
+          <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+        tabindex="-1" onclick="search();"/> 
+    </div>
+  </div></div>
+<div class="resultBox"><div class="result" id="results"></div></div></form></div>
+    
+    
+    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+</body>
